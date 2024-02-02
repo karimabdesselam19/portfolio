@@ -1,0 +1,180 @@
+/* Réinitialiser les styles par défaut */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+/* Styles pour la barre de navigation */
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* Styles pour l'en-tête de la page */
+
+.hero {
+	background-image: url(https://exemple.com/hero-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.cta {
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.cta:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Styles pour les sections */
+
+section {
+	padding: 50px;
+}
+
+section h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.service i {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.service h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.service p {
+	font-size: 18px;
+	text-align: center;
+}
+
+.testimonial {
+	background-color: #f8f8f8;
+	padding: 30px;
+	margin-bottom: 50px;
+}
+
+.testimonial p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.testimonial span {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* Styles pour les icônes */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Styles pour les tailles d'écran */
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+	}
+	
+	nav li {
+		margin: 10px 0;
+	}
+	
+	.hero {
+		height: 300px;
+	}
+	
+	.hero h1 {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	
+	.hero p {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	
+	.cta {
+		padding: 8px 16px;
+		font-size: 14px;
+	}
+	
+	.service {
+		margin-bottom: 30px;
+	}
+	
+	.service i {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	
+	.service h3 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	
+	.service p {
+		font-size: 16px;
+	}
+}
